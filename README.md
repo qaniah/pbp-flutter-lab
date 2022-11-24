@@ -1,4 +1,33 @@
 ### Qaniah Zahirah 2106639491
+# Tugas 9
+### Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Kita dapat melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Namun, tidak lebih baik karena penempatan JSON dapat tidak sesuai dengan yang diinginkan. Hal ini karena tidak adanya struktur dari class yang jelas. 
+
+### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+- Text: Menampilkan suatu string dan style-nya.
+- Center: Menampilkan suatu child widget agar letaknya di tengah.
+- Column: Menampilkan child widget ini sesuai arah vertikal.
+- Row: Menampilkan child widget ini secara horizontal.
+- Padding: Memberikan padding disekitar child yang diletakkan di dalamnya.
+- EdgeInsets: Memberikan Offset pada 4 arah kardinal yang bersifat immutable.
+- Container: Menggabungkan widget umum untuk painting, positioning, dan sizing.
+- Drawer: Untuk berpindah halaman.
+
+### Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+- Membuat model untuk data yang akan ditampilkan
+- Menambahkan package HTTP tambahan
+- Menambahkan kode pada android/app/src/main/AndroidManifest.xml untuk memperbolehkan untuk mengakses internet.
+- Membuat Future<List> yang akan dihubungkan kedalam future builder.
+- Melakukan passing pada list tersebut dan melakukan listview.builder agar setiap widget dapat di render.
+
+### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Menambah kode di drawer.dart agar dapat menampilkan My Watchlist.
+- Menggunakan data JSON tugas 3 lalu mengconvertnya menjadi kode dart lalu menaruhnya di watchlistModel.dart.
+- Menginstall dependensi http.
+- Menangkap JSON pada mywatchlist.dart dengan membuat fungsi fetch lalu fetching dengan link JSON heroku tugas 3.
+- Melakukan wrap dari setiap object untuk merouting ke halaman detail watchlist.
+- Membuat halaman detail pada detailMywatchlist.dart agar dapat menampilkan detail film yang diclick.
+
 # Tugas 8
 
 ### Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
